@@ -16,7 +16,7 @@ Este é um miniprojeto de E-Commerce desenvolvido em C# utilizando o framework .
 #### • LINQ: Linguagem Integrada de Consulta para consultas integradas no código.
 
 ## Configuração do Projeto 🤝
-#### Clone o repositório: git clone https://github.com/seu-usuario/miniprojeto-ecommerce.git 
+#### Clone o repositório: git clone https://github.com/joelcesar04/MiniProjetoConsole-eCommerce.git 
 #### Abra o projeto no Visual Studio ou qualquer outra IDE de sua escolha.
 #### Execute o comando dotnet ef database update para criar o banco de dados com as tabelas necessárias.
 
