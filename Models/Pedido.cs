@@ -14,6 +14,7 @@ namespace eCommerce.Console.Models
         public int DataPedido { get; set; }
         public ETipoPagamento TipoPagamento { get; set; }
         public Cliente? Cliente { get; set; }
-
+        public ICollection<Produto>? Produtos { get; set; }
+        public ICollection<ProdutosPedidos>? ProdutosPedidos { get; set; }
     }
 }
