@@ -1,4 +1,4 @@
-﻿using eCommerce.Console.Screens.UserScreen;
+﻿using eCommerce.Console.Screens;
 
 Console.WriteLine("SEJÁ BEM-VINDO!");
 Console.WriteLine("-----------------");
@@ -19,6 +19,6 @@ var response = int.Parse(Console.ReadLine()!);
 switch(response)
 {
     case 1:
-        Menu.UserMenuScreen();
+        Menus.ClientMenu();
     break;
 }
