@@ -1,5 +1,5 @@
 ﻿using eCommerce.Console.Database;
-using eCommerce.Console.Screens.UserScreen;
+using eCommerce.Console.Screens.ClientScreen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,16 +14,16 @@ namespace eCommerce.Console.Screens
         {
             System.Console.Clear();
 
-            System.Console.WriteLine("ÁREA DO USUÁRIO");
+            System.Console.WriteLine("ÁREA DO CLIENTE");
             System.Console.WriteLine("-----------------");
 
             System.Console.WriteLine("Escolha a opção que deseja?");
 
-            System.Console.WriteLine("1 - Listar Usuários");
-            System.Console.WriteLine("2 - Listar Usuário (1)");
-            System.Console.WriteLine("4 - Incluir Usuário");
-            System.Console.WriteLine("5 - Atualizar Usuário");
-            System.Console.WriteLine("6 - Deletar Usuário");
+            System.Console.WriteLine("1 - Listar Clientes");
+            System.Console.WriteLine("2 - Listar Cliente (1)");
+            System.Console.WriteLine("3 - Incluir Cliente");
+            System.Console.WriteLine("4 - Atualizar Cliente");
+            System.Console.WriteLine("5 - Deletar Cliente");
             System.Console.WriteLine("0 - Voltar");
 
             System.Console.WriteLine();
