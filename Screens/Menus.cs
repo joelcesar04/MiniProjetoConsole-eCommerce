@@ -39,6 +39,9 @@ namespace eCommerce.Console.Screens
                 case 2:
                     ListClient.LoadId();
                     break;
+                case 3:
+                    CreateClient.LoadCreate();
+                    break;
             }
         }
     }
