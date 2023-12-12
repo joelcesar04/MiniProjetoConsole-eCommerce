@@ -15,8 +15,8 @@ namespace eCommerce.Console.Models
         public string RG { get; set; } = null!;
         public string CPF { get; set; } = null!;
         public DateTime DataCadastro { get; set; }
-        public Contato? Contato { get; set; }
-        public Endereco? Endereco { get; set; }
+        public Contato Contato { get; set; } = new Contato();
+        public Endereco Endereco { get; set; } = new Endereco();
         public ICollection<Pedido>? Pedidos { get; set; }
     }
 }
