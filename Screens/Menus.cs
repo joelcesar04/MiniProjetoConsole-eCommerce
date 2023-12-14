@@ -42,6 +42,13 @@ namespace eCommerce.Console.Screens
                 case 3:
                     CreateClient.LoadCreate();
                     break;
+                case 4:
+                    UpdateClient.LoadUpdate();
+                    break;
+
+                case 0:
+                    Program.Main();
+                    break;
             }
         }
     }
