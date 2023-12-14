@@ -1,24 +1,34 @@
 ﻿using eCommerce.Console.Screens;
 
-Console.WriteLine("SEJÁ BEM-VINDO!");
-Console.WriteLine("-----------------");
-Console.WriteLine("O que gostaria de gerenciar?");
-
-Console.WriteLine();
-
-Console.WriteLine("1 - Acessar a área do Cliente");
-Console.WriteLine("2 -");
-Console.WriteLine("3 -");
-Console.WriteLine("4 -");
-
-Console.WriteLine();
-
-Console.Write("R: ");
-var response = int.Parse(Console.ReadLine()!);
-
-switch(response)
+namespace eCommerce.Console
 {
-    case 1:
-        Menus.ClientMenu();
-    break;
+    public class Program
+    {
+        public static void Main()
+        {
+            System.Console.Clear();
+            System.Console.WriteLine("SEJÁ BEM-VINDO!");
+            System.Console.WriteLine("-----------------");
+            System.Console.WriteLine("O que gostaria de gerenciar?");
+
+            System.Console.WriteLine();
+
+            System.Console.WriteLine("1 - Acessar a área do Cliente");
+            System.Console.WriteLine("2 -");
+            System.Console.WriteLine("3 -");
+            System.Console.WriteLine("4 -");
+
+            System.Console.WriteLine();
+
+            System.Console.Write("R: ");
+            var response = int.Parse(System.Console.ReadLine()!);
+
+            switch (response)
+            {
+                case 1:
+                    Menus.ClientMenu();
+                    break;
+            }
+        }
+    }
 }
