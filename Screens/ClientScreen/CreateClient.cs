@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.Console.Screens.ClientScreen
 {
-    public class CreateClient
+    public static class CreateClient
     {
         public static void LoadCreate()
         {
@@ -26,15 +26,16 @@ namespace eCommerce.Console.Screens.ClientScreen
             var email = System.Console.ReadLine();
             System.Console.Write(" Gênero do Cliente (M/F): ");
             var gender = System.Console.ReadLine();
-            if (gender!.Length > 1)
+            while (gender!.Length > 1)
             {
                 System.Console.WriteLine("----------------------------");
                 System.Console.WriteLine(" INVALIDO! INSIRA M ou F.");
                 System.Console.WriteLine(" TENTE NOVAMENTE!");
                 System.Console.WriteLine("----------------------------");
                 Thread.Sleep(3000);
-                LoadCreate();
-                return;
+
+                System.Console.Write(" Gênero do Cliente (M/F): ");
+                gender = System.Console.ReadLine();
             }
 
             System.Console.Write(" RG: ");
@@ -90,8 +91,10 @@ namespace eCommerce.Console.Screens.ClientScreen
                 }
             };
 
+            System.Console.WriteLine();
             Create(client);
 
+            System.Console.WriteLine();
             System.Console.WriteLine("Retornando ao menu...");
             Thread.Sleep(2000);
             Menus.ClientMenu();
@@ -106,12 +109,14 @@ namespace eCommerce.Console.Screens.ClientScreen
                 {
                     repository.Create(client);
                     System.Console.WriteLine("Cliente Cadastrado!");
+                    System.Console.WriteLine();
                     Thread.Sleep(2000);
-                } catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     System.Console.WriteLine("Não foi possível cadastrar o cliente!");
                     System.Console.WriteLine(ex.Message);
-                    Thread.Sleep(2000);
+                    Thread.Sleep(5000);
                 }
             }
         }
