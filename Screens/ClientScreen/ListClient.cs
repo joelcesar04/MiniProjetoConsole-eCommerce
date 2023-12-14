@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.Console.Screens.ClientScreen
 {
-    public class ListClient
+    public static class ListClient
     {
         public static void Load()
         {
