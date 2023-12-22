@@ -45,6 +45,9 @@ namespace eCommerce.Console.Screens
                 case 4:
                     UpdateClient.LoadUpdate();
                     break;
+                case 5:
+                    DeleteClient.LoadDelete();
+                    break;
 
                 case 0:
                     Program.Main();
