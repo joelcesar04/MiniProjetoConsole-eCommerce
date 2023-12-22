@@ -44,9 +44,9 @@ namespace eCommerce.Console.Repositories
             _db.SaveChanges();
         }
 
-        public void Delete(int id)
+        public void Delete(Cliente cliente)
         {
-            _db.Remove(id);
+            _db.Remove(cliente);
             _db.SaveChanges();
         }
 

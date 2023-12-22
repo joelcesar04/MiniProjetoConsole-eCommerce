@@ -13,6 +13,6 @@ namespace eCommerce.Console.Repositories
         T Get(int id);
         void Create(T model);
         void Update(T model);
-        void Delete(int id);
+        void Delete(T model);
     }
 }
