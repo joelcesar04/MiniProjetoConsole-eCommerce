@@ -40,15 +40,14 @@ namespace eCommerce.Console.Repositories
         }
         public void Update(Cliente cliente)
         {
-            _db.Update(cliente);
+            _db.Clientes.Update(cliente);
             _db.SaveChanges();
         }
 
         public void Delete(Cliente cliente)
         {
-            _db.Remove(cliente);
+            _db.Clientes.Remove(cliente);
             _db.SaveChanges();
         }
-
     }
 }
