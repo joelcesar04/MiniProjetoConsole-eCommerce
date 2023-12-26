@@ -1,4 +1,5 @@
 ﻿using eCommerce.Console.Database;
+using eCommerce.Console.Screens.CategoryScreen;
 using eCommerce.Console.Screens.ClientScreen;
 using System;
 using System.Collections.Generic;
@@ -53,6 +54,52 @@ namespace eCommerce.Console.Screens
                     Program.Main();
                     break;
             }
+        }
+
+        public static void CategoryMenu()
+        {
+            System.Console.Clear();
+
+            System.Console.WriteLine("ÁREA DAS CATEGORIAS");
+            System.Console.WriteLine("-----------------");
+
+            System.Console.WriteLine("Escolha a opção que deseja?");
+
+            System.Console.WriteLine("1 - Listar Categorias C/ Produtos");
+            System.Console.WriteLine("2 - Listar Categoria (1)");
+            System.Console.WriteLine("3 - Incluir Categoria");
+            System.Console.WriteLine("4 - Atualizar Categoria");
+            System.Console.WriteLine("5 - Deletar Categoria");
+            System.Console.WriteLine("0 - Voltar");
+
+            System.Console.WriteLine();
+
+            System.Console.Write("R: ");
+            var response = int.Parse(System.Console.ReadLine()!);
+
+            switch (response)
+            {
+                case 1:
+                    ListCategory.Load();
+                    break;
+                case 2:
+                    ListCategory.LoadId();
+                    break;
+                case 3:
+                    CreateCategory.LoadCreate();
+                    break;
+                case 4:
+                    UpdateCategory.LoadUpdate();
+                    break;
+                case 5:
+                    DeleteCategory.LoadDelete();
+                    break;
+
+                case 0:
+                    Program.Main();
+                    break;
+            }
+
         }
     }
 }
