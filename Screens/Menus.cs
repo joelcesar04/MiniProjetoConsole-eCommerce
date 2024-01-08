@@ -1,6 +1,7 @@
 ﻿using eCommerce.Console.Database;
 using eCommerce.Console.Screens.CategoryScreen;
 using eCommerce.Console.Screens.ClientScreen;
+using eCommerce.Console.Screens.ProductScreen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -93,6 +94,52 @@ namespace eCommerce.Console.Screens
                     break;
                 case 5:
                     DeleteCategory.LoadDelete();
+                    break;
+
+                case 0:
+                    Program.Main();
+                    break;
+            }
+
+        }
+
+        public static void ProductMenu()
+        {
+            System.Console.Clear();
+
+            System.Console.WriteLine("ÁREA DOS PRODUTOS");
+            System.Console.WriteLine("-----------------");
+
+            System.Console.WriteLine("Escolha a opção que deseja?");
+
+            System.Console.WriteLine("1 - Listar Produtos");
+            System.Console.WriteLine("2 - Listar Produto (1)");
+            System.Console.WriteLine("3 - Incluir Produto");
+            System.Console.WriteLine("4 - Atualizar Produto");
+            System.Console.WriteLine("5 - Deletar Produto");
+            System.Console.WriteLine("0 - Voltar");
+
+            System.Console.WriteLine();
+
+            System.Console.Write("R: ");
+            var response = int.Parse(System.Console.ReadLine()!);
+
+            switch (response)
+            {
+                case 1:
+                    ListProduct.Load();
+                    break;
+                case 2:
+                    ListProduct.LoadId();
+                    break;
+                case 3:
+                    CreateProduct.LoadCreate();
+                    break;
+                case 4:
+                    UpdateProduct.LoadUpdate();
+                    break;
+                case 5:
+                    DeleteProduct.LoadDelete();
                     break;
 
                 case 0:
