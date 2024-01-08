@@ -33,13 +33,9 @@ namespace eCommerce.Console.Database
             modelBuilder.Entity<Cliente>(entity =>
             {
                 entity.Property(a => a.RG).HasMaxLength(20);
-
                 entity.Property(a => a.CPF).HasMaxLength(20);
-
                 entity.Property(a => a.DataCadastro).HasDefaultValueSql("GETDATE()");
-
                 entity.HasIndex(a => a.Nome);
-
                 entity.HasIndex(a => new { a.CPF, a.Email }).IsUnique();
 
             });
@@ -70,7 +66,7 @@ namespace eCommerce.Console.Database
             {
                 entity.HasIndex(a => a.Nome).IsUnique();
 
-                entity.Property(a => a.Preco).HasPrecision(2);
+                entity.Property(a => a.Preco).HasPrecision(18, 2);
             });
 
             modelBuilder.Entity<Categoria>(entity =>
