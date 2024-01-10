@@ -1,5 +1,6 @@
 ﻿using eCommerce.Console.Database;
 using eCommerce.Console.Models;
+using eCommerce.Console.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerce.Console.Repositories
+namespace eCommerce.Console.Repositories.Interfaces
 {
-    public interface IRepository<T> 
+    public interface IRepository<T>
         where T : class
     {
         IEnumerable<T> Get();
