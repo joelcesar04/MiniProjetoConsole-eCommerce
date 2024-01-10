@@ -14,7 +14,7 @@ namespace eCommerce.Console
             System.Console.WriteLine();
 
             System.Console.WriteLine("1 - Acessar a área do Cliente");
-            System.Console.WriteLine("2 -");
+            System.Console.WriteLine("2 - Acessar a área de Pedidos");
             System.Console.WriteLine("3 - Acessar a área de Produtos");
             System.Console.WriteLine("4 - Acessar a área de Categorias");
 
@@ -27,6 +27,9 @@ namespace eCommerce.Console
             {
                 case "1":
                     Menus.ClientMenu();
+                    break;
+                case "2":
+                    Menus.RequestMenu();
                     break;
                 case "3":
                     Menus.ProductMenu();
