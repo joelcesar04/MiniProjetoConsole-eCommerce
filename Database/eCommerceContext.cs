@@ -57,7 +57,6 @@ namespace eCommerce.Console.Database
                         q =>
                         {
                             q.HasKey(a => new { a.PedidoId, a.ProdutoId });
-                            q.Property(a => a.NroPedido).ValueGeneratedOnAdd();
                         }
                         );
             });
